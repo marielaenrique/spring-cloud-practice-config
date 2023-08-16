@@ -1,20 +1,9 @@
 server:
-  port: ${PORT:${SERVER_PORT:0}}
+  port: 0
 
 spring:
   application:
-    name: music-service
-  datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3380/music-dev
-    username: usr-music
-    password: pwd-music
-  jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
-    show-sql: true
-
-message: "hello world"
+    name: playlist-service
 
 eureka:
   client:
